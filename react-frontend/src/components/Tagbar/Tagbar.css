@@ -1,0 +1,45 @@
+.tags {
+  width: 100%;
+}
+
+.tags_ul {
+  margin: 0;
+  padding: 9px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.tag-button {
+  color: rgb(189, 186, 186);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.tag-button-active {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.tag-button:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+
+.tag-li:hover {
+  transition: 0.3s;
+  background: rgba(54, 46, 71, 0.7);
+}
+
+.tag-li, .tag-li-active {
+  padding: 10px;
+  border: 1px solid #7f5ee061;
+  border-radius: 10px;
+  display: inline;
+}
+
+.tag-li-active{
+  background: rgba(54, 46, 71, 0.7);
+}

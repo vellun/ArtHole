@@ -1,0 +1,165 @@
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  box-shadow: 0px 5px 30px 0px #2a0e61;
+  align-items: center;
+}
+
+.logo {
+  color: azure;
+  font-size: 30px;
+}
+
+.logo_a{
+  text-decoration: none
+}
+
+.logo span {
+  color: #757094;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link {
+  padding: 20px 30px;
+  position: relative;
+}
+
+.nav-link .nav-link_a {
+  color: rgb(189, 186, 186);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.navbar .border {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: auto;
+  height: 50px;
+  border-radius: 100px;
+  border-width: 2px;
+  border: solid #7042f861;
+  border-width: 0 4px;
+}
+
+.nav-link .nav-link_a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link .nav-link_a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -14px;
+  display: block;
+  height: 2px;
+  background: rgb(101, 101, 234);
+  box-shadow: 0px 5px 10px 0px rgb(101, 101, 234);
+}
+
+.nav-link .nav-link_a::after {
+  width: 0;
+  transition: 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link .nav-link_a:hover:after {
+  width: 100%;
+}
+
+.dropdown{
+  display: none;
+}
+
+.nav-link:hover .dropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #383343;
+  box-shadow: 0px 0px 10px 0px #2A0E61;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #163b9f61;
+}
+
+.dropdown ul {
+  display: block;
+  margin: 10px;
+}
+
+.dropdown-link{
+  border-radius: 10px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-link a{
+  color: rgb(189, 186, 186);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.dropdown-link a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.dropdown ul li:hover {
+  background-color: #958bb361;
+  color: aliceblue;
+}
+
+.search {
+  height: 50px;
+  border-radius: 100px;
+  border-width: 2px;
+  border: solid #7042f861;
+  border-width: 2px;
+  padding: 10px;
+  width: auto;
+  transition: 0.7s;
+}
+
+.search:hover {
+  border-color: #5a5369;
+}
+
+.search-btn{
+  color: rgb(209, 195, 216);
+  float: right;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(209, 195, 216);
+  font-size: 19px;
+  transition: 0.4s;
+  height: auto;
+  margin-left: 5px;
+}
+
+.sign-in-up{
+  float: right;
+}
