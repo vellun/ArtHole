@@ -12,7 +12,7 @@ app.include_router(router=router_v1, prefix=settings.api_v1_prefix)
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True)
+    uvicorn.run("main:app", reload=True, port=5000)
 
 # source venv/Scripts/activate
 # uvicorn main:app --reload --port 5000
